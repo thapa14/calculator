@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="calculatorBody">
+                <div id="display">0</div>
+                <button class="btn symbol" onclick="symbols('plus')" id="plus">+</button>
+                <button class="btn symbol" onclick="symbols('minus')" id="minus">-</button>
+                <button class="btn symbol" onclick="symbols('multiply')" id="multiply">*</button>
+                <button class="btn symbol" onclick="symbols('divide')" id="divide">/</button>
+                <button class="btn number" onclick="display('seven')" id="seven">7</button>
+                <button class="btn number" onclick="display('eight')" id="eight">8</button>
+                <button class="btn number" onclick="display('nine')" id="nine">9</button>
+                <button class="btn number" onclick="display('four')" id="four">4</button>
+                <button class="btn number" onclick="display('five')" id="five">5</button>
+                <button class="btn number" onclick="display('six')" id="six">6</button>
+                <button class="btn number" onclick="display('one')" id="one">1</button>
+                <button class="btn number" onclick="display('two')" id="two">2</button>
+                <button class="btn number" onclick="display('three')" id="three">3</button>
+                <button class="btn number" onclick="display('zero')" id="zero">0</button>
+                <button class="btn number" onclick="symbols('dot')" id="dot">.</button>
+                <button class="btn number" onclick="clearScreen()" id="clear">AC</button>
+                <button id="equals" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
