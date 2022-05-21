@@ -1,19 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-.container{
+
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.calculatorBody{
+
+.calculatorBody {
     width: 35rem;
     display: grid;
     box-shadow: 0px 0px 16px -3px black;
@@ -24,12 +27,13 @@ html{
     row-gap: 0.4rem;
     column-gap: 0.4rem;
     grid-template-areas: 'display display display display'
-    'plus minus multiply divide'
-    'seven eight nine equals'
-    'four five six equals'
-    'one two three equals'
-    'zero dot clear equals';
+        'plus minus multiply divide'
+        'seven eight nine equals'
+        'four five six equals'
+        'one two three equals'
+        'zero dot clear equals';
 }
+
 .btn {
     width: 100%;
     height: 4.4rem;
@@ -37,18 +41,25 @@ html{
     border: 1px outset rgba(0, 0, 0, 0.342);
     border-radius: 0.4rem;
     background-color: #F7F7F7;
-    
-}
-.btn:hover {
-    background-color: #F9EBC8;
+
 }
 
-.symbol{
+.btn:hover {
+    background-color: #F9EBC8;
+    position: relative;
+    top: 0.1rem;
+    box-shadow: 0 0 1px 0px black;
+}
+
+
+.symbol {
     background-color: #92B4EC;
 }
-.symbol:hover{
+
+.symbol:hover {
     background-color: #B7E5DD;
 }
+
 #display {
     width: 100%;
     grid-area: display;
@@ -63,56 +74,72 @@ html{
     border-top-right-radius: 1rem; */
 }
 
-#plus{
+#plus {
     grid-area: plus;
 }
-#minus{
+
+#minus {
     grid-area: minus;
 }
-#multiply{
+
+#multiply {
     grid-area: multiply;
 }
-#divide{
+
+#divide {
     grid-area: divide;
 }
-#one{
+
+#one {
     grid-area: one;
 }
-#two{
+
+#two {
     grid-area: two;
 }
-#three{
+
+#three {
     grid-area: three;
 }
-#four{
+
+#four {
     grid-area: four;
 }
-#five{
+
+#five {
     grid-area: five;
 }
-#six{
+
+#six {
     grid-area: six;
 }
-#seven{
+
+#seven {
     grid-area: seven;
 }
-#eight{
+
+#eight {
     grid-area: eight;
 }
-#nine{
+
+#nine {
     grid-area: nine;
 }
-#zero{
+
+#zero {
     grid-area: zero;
     /* border-bottom-left-radius: 1rem; */
 }
-#dot{
+
+#dot {
     grid-area: dot;
 }
-#clear{
+
+#clear {
     grid-area: clear;
 }
-#equals{
+
+#equals {
     grid-area: equals;
     /* border-bottom-right-radius: 1rem; */
     background-color: #FFB319;
@@ -121,8 +148,7 @@ html{
     border-radius: 0.4rem;
     font-size: 2rem;
 }
-#equals:hover{
+
+#equals:hover {
     background-color: #FFE194;
 }
-
-
